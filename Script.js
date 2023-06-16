@@ -28,9 +28,10 @@ document.write(
           '<li class="dropdown">'+
             '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Games<b class="caret"></b></a>'+
             '<ul class="dropdown-menu">'+
+				'<li role="separator" class="divider"></li>'+
 				'<li><a href="GamesWeed.html" title="Spiel: Weedfighter">Weedfighter</a></li>'+
 				'<li><a href="GamesCatlyn.html" title="Spiel: Catlyn">Catlyn</a></li>'+
-				'<li><a href="colorgame.html" title="Spiel: Color Game">Color-Game</a></li>'+
+				'<li><a href="colorGame.html" title="Spiel: Color Game">Color-Game</a></li>'+
             '</ul>'+
          ' </li><!-- dropdown -->'+
 		  '<li class="dropdown">'+
@@ -45,17 +46,10 @@ document.write(
            		'<li><a href="Pictures.html" title="Spectacular Pictures">sPICtacular</a></li>'+
 		     '</ul>'+
          ' </li><!-- dropdown -->'+
-		 '<li class="dropdown">'+
-            '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Scripts<b class="caret"></b></a>'+
-            '<ul class="dropdown-menu">'+
-           		'<li><a href="scriptsPictureCoding.html" title="Bildbearbeitung">Bildbearbeitung</a></li>'+
-		     '</ul>'+
-         ' </li><!-- dropdown -->'+
 		 	'<li class="dropdown">'+
             '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<b class="caret"></b></a>'+
             '<ul class="dropdown-menu">'+
            		'<li><a href="ProgramsAcousticMirror.html" title="Acoustic Mirror">Acoustic Mirror</a></li>'+
-					'<li role="separator" class="divider"></li>'+
 		     '</ul>'+
          ' </li><!-- dropdown -->'+
        ' </ul><!-- /.nav -->'+	
@@ -75,11 +69,21 @@ document.write(
 
 function createFooter() {	 //create Footer and Year
 document.write(
-	'<footer><div class="col-lg-2 col-sm-2 col-xs-0"></div>'+
-	'<div class="col-lg-8 col-sm-8 col-xs-6">' + ' MyLittleProjects </br> <a href="Impressum.html">Impressum</a>' + 
-	'<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"></div>' +
-	'<div class="col-lg-2 col-sm-2 col-xs-6">' +
-	'<img alt="Creative Commons Lizenzvertrag" style="border-width:0;float:right; margin: 4px 3px 3px 3px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a></div>' +
+	'<footer><div></div>' +
+	'<div class="footer-text"><div> IcyIce Media </div><div> | </div><a class="link" href="Impressum.html">Impressum</a></div>' +
+	'<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">' +
+	'<img alt="Creative Commons Lizenzvertrag" style="border-width:0;float:right; margin: 4px 3px 3px 3px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>'+
 	'</footer>'
+)};
+
+function createHead() {	 //create Footer and Year
+document.write(
+	'<title>IcyIce Media</title>'+
+	'<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">	<!-- Darstellung von Umlauten aktivieren, manchmal auch <meta charset="utf-8">	-->' + 
+	'<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">' +
+	'<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>' +
+	'<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>' +
+	'<link rel="stylesheet" type="text/css" href="SiteStyle.css">'+
+	'<link rel="stylesheet" type="text/css" href="Bildbearbeitung.css">'
 )};
 

@@ -2,24 +2,19 @@
 <html>
 
 <head>
-	 <meta charset="UTF-8">
-	<title>Color Game - My Little Projects</title>
-	<script src = "Script.js" charset="UTF-8"></script>							<!-- Einfügung eines externen Javascriptes (mit Umlautdarstellung) -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="SiteStyle.css">
+	<script src = "Script.js" charset="UTF-8"></script>								
+	<script><!-- Erstelle imports -->		
+		createHead();
+	</script> 
 	<link rel="stylesheet" type="text/css" href="colorgame.css">
 </head>
 
 <body>	
 <!-- ------------------------------------------------------------------------------------------ -->	
-	<script>					<!-- Erstelle Navbar Header -->		
-		createMainMenu();
-	</script> 
-		
+<script>	<!-- Erstelle Navbar Header -->		
+	createMainMenu();
+</script> 
 
-<div class="container">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<h2>The Great Color Game<br><span id="colorDisplay">RGB</span></h2>
@@ -67,6 +62,7 @@
 		createFooter();
 	</script> 
 </body>
+
 <scripts> 
  <script src="colorgame.js"></script>
 </scripts>

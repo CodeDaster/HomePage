@@ -24,21 +24,20 @@ function init(){
 }
 
 function setupGamesCount(event){
-	var gamesWon = localStorage.getItem("gamesWon")
-	if( gamesWon === null || gamesWon === undefined ||gamesWon === "NaN"){
-		localStorage.setItem("gamesWon", 0);
+	if( localStorage.getItem("gamesWon" + event) == null){
+		localStorage.setItem("gamesWon" + event, 0);
 	}
 	document.getElementById("gamesWon").innerHTML = localStorage.gamesWon;
 	if( localStorage.getItem("avgTry" + event) == null){
 		switch (event) {
 		case "Easy":
-			localStorage.setItem("avgTry" + event, 3);
+			localStorage.setItem("avgTry" + event, 2);
 			break;
 		case "Medium":
-			localStorage.setItem("avgTry" + event, 5);
+			localStorage.setItem("avgTry" + event, 3);
 			break;
 		case "Hard":
-			localStorage.setItem("avgTry" + event, 8);
+			localStorage.setItem("avgTry" + event, 5);
 		}
 	
 	}
